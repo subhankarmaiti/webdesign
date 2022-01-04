@@ -74,15 +74,12 @@
 
     &::after {
       content: "";
+      @include absCenter;
       display: block;
       height: 1.3rem;
       width: 1.3rem;
       background-color: $color-primary;
       border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       opacity: 0;
       transition: opacity 0.2s;
     }
